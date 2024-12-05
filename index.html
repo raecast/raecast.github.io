@@ -1,12 +1,98 @@
 <!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<html>
+    <link rel="icon" type="image/x-icon" href="images/site/favicon.ico">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script defer src="js/scroll.js"></script>
+    <script defer src="js/main-page.js"></script>
+
+    <title>Rae Erica's Portfolio</title>
+</head>
 
 <body>
 
-    <h1>aaaaa</h1>
+    <div class="front-page">
 
+    <div class="hero image-background parallax" style="background-image: url('content/images/gallery/locust_render1.png');">
+
+        <div class="content blur-background">
+            <div class="center-fit">
+            <div class="name-box">
+                <h2>the portfolio of</h2>
+                <h1>Rae Erica</h1>
+                <h2>she/her</h2>
+            </div>
+            <div class="job-titles-box">
+                <h2>Game Developer</h2>
+                <h2>3D Artist</h2>
+            </div>
+            <div class="contact-box">
+                <button><h2>contact</h2></button>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="navbar" class="navbar">
+        <div class="content">
+        <div class="section-box">
+            <h2 class="section">front page</h2>
+        </div>
+        <div class="links">
+            <a>Games</a>
+            <a>3D Art</a>
+            <a>Music</a>
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <h1>Games I've worked on</h1>
+
+    <div class="projects-box">
+
+        <div class="project">
+            <div class="preview">
+                <!-- width="552" height="167" -->
+                <iframe frameborder="0" src="https://itch.io/embed/3142573?linkback=true"><a href="https://brainfriendsstudio.itch.io/fetching-stars">Fetching Stars by BrainFriends.Studio</a></iframe>
+            </div>
+            <div class="blurb">
+                <h2>Lead Programmer</h2>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h1>3D Art</h1>
+
+    <div id="featured-art-box" class="projects-box">
+
+        <template id="featured-art-project">
+            <div class="project">
+                <div class="preview-box">
+                    <img class="preview" src="">
+                </div>
+                <div class="blurb-box">
+                    <p class="blrub"></p>
+                </div>
+            </div>
+        </template>
+    </div>
+
+    <button onclick="document.location='gallery.html';"><p>full art gallery</p></button>
+
+
+    <div style="height: 100vh;"></div>
+    
 </body>
-
-
 </html>

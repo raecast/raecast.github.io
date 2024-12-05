@@ -1,0 +1,164 @@
+
+
+
+
+
+::-webkit-scrollbar 
+{ 
+  width: 5px; 
+  height: 5px; 
+}
+/* track */
+::-webkit-scrollbar-track 
+{ 
+    background: #181818; 
+}
+/* handle */
+::-webkit-scrollbar-thumb 
+{ 
+    background: #eee; 
+    border-radius: 2.5px;
+}
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover 
+{ 
+    background: #ddd; 
+}
+
+
+
+
+
+
+*
+{
+    margin: 0;
+
+    font-family: "Urbanist", sans-serif;
+}
+
+body
+{
+    background-color: #181818;
+    color: #eee;
+}
+
+h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40pt;
+    font-weight: bold;
+}
+
+
+
+button
+{
+    padding: 5px 20px;
+    border: 4px solid #eee;
+    background-color: inherit;
+    color: #eee;
+
+    cursor: pointer;
+}
+
+
+
+.front-page
+{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.hero
+{
+    /* height: 100vh; */
+    flex: 1;
+}
+
+.hero .content
+{
+    height: 100%;
+}
+
+.hero .center-fit
+{
+    height: 100%;
+    width: fit-content;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+}
+
+.contact-box
+{
+    margin: 0 auto;
+}
+
+
+.image-background
+{
+    background-position: center;
+    background-size: cover;
+}
+
+.blur-background
+{
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.2);
+}
+
+.parallax
+{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+.projects-box
+{
+    display: flex;
+}
+
+.project
+{
+    display: flex;
+}
+
+
+
+
+.navbar
+{
+    width: 100%;
+
+    background-color: #181818;
+}
+
+.stuck
+{
+    position: fixed;
+    top: 0;
+}
+
+.navbar .content
+{
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.links
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
