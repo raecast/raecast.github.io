@@ -1,0 +1,14 @@
+
+
+{
+    "image_directory":"content/images/gallery/",
+    "blurb_directory":"content/blurbs/",
+    "projects":[
+    { "featured":true,
+    "tags":["3d art"], 
+    "images":["skulleye_4krender05.png","skulleye_4krender06.png"],
+    "blurb":"skulleye_blurb.html"}]
+}
+
+
+

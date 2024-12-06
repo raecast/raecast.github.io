@@ -62,6 +62,10 @@ button
     cursor: pointer;
 }
 
+a
+{
+    cursor: pointer;
+}
 
 
 .front-page
@@ -122,17 +126,47 @@ button
 }
 
 
+.feature-box
+{
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
 .projects-box
 {
     display: flex;
+    flex-direction: column;
 }
 
 .project
 {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
+.blurb
+{
+    flex: 1;
 
+    min-width: 200px;
+
+    text-align: justify;
+}
+
+.preview-box
+{
+    height: 400px;
+    aspect-ratio: 1;
+}
+
+.preview-box img
+{
+    height: 100%;
+}
 
 
 .navbar
@@ -161,4 +195,79 @@ button
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+
+
+
+.modal
+{
+    height: 0;
+    overflow: hidden;
+
+    display: flex;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 2;
+}
+
+.modal.active
+{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.fill
+{
+    width: 100%;
+    height: 100%;
+}
+
+.border-box
+{
+    padding: 20px;
+}
+
+#contact-modal .content-box
+{
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+
+    
+    
+    background-color: #181818;
+}
+
+.modal-box
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal a
+{
+    padding: 10px;
+}
+
+.modal .content
+{
+    /* flex: 1; */
+
+    display: flex;
+    flex-wrap: wrap;
 }

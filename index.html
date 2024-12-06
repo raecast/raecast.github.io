@@ -8,8 +8,12 @@
 
     <link rel="stylesheet" href="css/main.css">
 
+    <script defer src="js/featured-art-gallery.js"></script>
+
     <script defer src="js/scroll.js"></script>
     <script defer src="js/main-page.js"></script>
+
+    
 
     <title>Rae Erica's Portfolio</title>
 </head>
@@ -32,17 +36,30 @@
                 <h2>3D Artist</h2>
             </div>
             <div class="contact-box">
-                <button><h2>contact</h2></button>
+                <button onclick="OpenModal('contact-modal')"><h2>contact</h2></button>
             </div>
             </div>
         </div>
 
     </div>
 
+    <div id="contact-modal" class="modal">
+        <div class="modal-box fill blur-background">
+        <div class="content-box">
+            <div class="top-bar">
+                <a onclick="CloseOpenModals()">close</a>
+            </div>
+            <div class="content">
+                <a href="https://www.linkedin.com/in/raechel-mortensen-0b542b340">LinkedIn</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <div id="navbar" class="navbar">
         <div class="content">
         <div class="section-box">
-            <h2 class="section">front page</h2>
+            <h2 class="section"></h2>
         </div>
         <div class="links">
             <a>Games</a>
@@ -55,6 +72,7 @@
     </div>
 
 
+    <div class="feature-box">
 
     <h1>Games I've worked on</h1>
 
@@ -62,35 +80,54 @@
 
         <div class="project">
             <div class="preview">
-                <!-- width="552" height="167" -->
-                <iframe frameborder="0" src="https://itch.io/embed/3142573?linkback=true"><a href="https://brainfriendsstudio.itch.io/fetching-stars">Fetching Stars by BrainFriends.Studio</a></iframe>
+                <iframe frameborder="0" src="https://itch.io/embed/3142573?bg_color=c5ebf7&amp;fg_color=0e64c0&amp;link_color=ef942b&amp;border_color=336dbe" width="552" height="167"><a href="https://brainfriendsstudio.itch.io/fetching-stars">Fetching Stars by BrainFriends.Studio</a></iframe>
             </div>
             <div class="blurb">
-                <h2>Lead Programmer</h2>
+                <p>I was the <b>Lead Programmer</b> on BrainFriends' Fetching Stars.</p>
+                <br>
+                <p>In this role, my work included programming the player movement and oxygen system, holdable and collectable items, interactable level elements, and subtitles.
+                    Additionally, I was involved with project management by setting up and maintaining the version control of the project through GitHub.
+                </p>
             </div>
         </div>
 
     </div>
 
+    </div>
+
+    <div class="feature-box">
 
     <h1>3D Art</h1>
 
     <div id="featured-art-box" class="projects-box">
 
-        <template id="featured-art-project">
+        <template id="featured-art-template">
             <div class="project">
-                <div class="preview-box">
+                <a class="preview-box">
                     <img class="preview" src="">
+                </a>
+
+                <div class="modal">
+                    <div class="modal-box fill blur-background">
+                        <div class="content-box">
+                            <div class="top-bar">
+                                <a onclick="CloseOpenModals()">close</a>
+                            </div>
+                            <div class="content">
+                                aaaa
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="blurb-box">
-                    <p class="blrub"></p>
-                </div>
+                
+                <div class="blurb"></div>
             </div>
         </template>
     </div>
 
-    <button onclick="document.location='gallery.html';"><p>full art gallery</p></button>
+    <button onclick="document.location='gallery.html';"><p>view full art gallery</p></button>
 
+    </div>
 
     <div style="height: 100vh;"></div>
     
