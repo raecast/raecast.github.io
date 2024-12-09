@@ -305,10 +305,58 @@ a
     flex: 2;
 }
 
-.gallery-item img
+.fit-image
 {
     height: 100%;
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
 }
+
+
+
+
+.image-list
+{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+
+    img
+    {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+    }
+}
+
+.gallery-item .modal .content-box
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item .modal .content
+{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.displayed-image-box
+{
+    flex: 1;
+
+    img
+    {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+    }
+}
+

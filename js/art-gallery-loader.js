@@ -17,13 +17,14 @@ async function PopulateProjectData()
     }
 }
 
-const gallery_box = document.querySelector('#gallery-box');
-const gallery_item_template = document.querySelector('#gallery-item-template');
-
-const image_list_item_template = document.querySelector('#image-list-item-template');
-
 async function DisplayArt(index, project_info)
 {
+    const gallery_box = document.querySelector('#gallery-box');
+    const gallery_item_template = document.querySelector('#gallery-item-template');
+
+    const image_list_item_template = document.querySelector('#image-list-item-template');
+
+
     const new_item = gallery_item_template.content.cloneNode(true);
 
     const blurb_request = new Request(blurb_directory + project_info.blurb);
@@ -50,6 +51,7 @@ async function DisplayArt(index, project_info)
 
     if (image_width > image_height)  
     {
+        // console.log(project_info.images[0], ' is wide', new_item.querySelector('.gallery-item'));
         new_item.querySelector('.gallery-item').classList.add('wide-item');
     }
 

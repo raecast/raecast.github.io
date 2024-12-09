@@ -8,9 +8,11 @@
 
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- <script defer src="js/scroll.js"></script> -->
-    <script defer src="js/art-gallery-loader.js"></script>
+    <script defer src="js/html-module-inserter.js"></script>
 
+    <!-- <script defer src="js/scroll.js"></script> -->
+
+    <script defer src="js/art-gallery-loader.js"></script>
     <script defer src="js/modal-handler.js"></script>
 
     <title>Rae Erica's Art Gallery</title>
@@ -19,38 +21,11 @@
 <body>
 
 
-    <template id="image-list-item-template">
-        <img src=""></img>
-    </template>
+    <!-- <module src="content/blurbs/skulleye_blurb.html"></module> -->
 
+    <module src="html_modules/gallery-item.html"></module>
 
-    <div id="gallery-box" class="gallery-box">
-
-        <template id="gallery-item-template">
-            <div class="gallery-item">
-                <img class="preview" src="">
-
-                <div class="modal">
-                    <div class="modal-box fill blur-background">
-                        <div class="content-box">
-                            <div class="top-bar">
-                                <a onclick="CloseOpenModals()">close</a>
-                            </div>
-                            <div class="content">
-                                <div class="displayed-image-box">
-                                    <img class="displayed-image" src="">
-                                </div>
-                                <div class="image-list">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </template>
-    </div>
-
+    <div id="gallery-box" class="gallery-box"></div>
 
 
 </body>
