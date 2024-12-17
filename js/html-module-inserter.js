@@ -1,16 +1,40 @@
 
-
-
-
 const modules = document.querySelectorAll('module');
 
-modules.forEach(module => {
-    load_file(module.attributes.src.value, function(text) {
-        module.insertAdjacentHTML('afterend', text);
+modules.forEach(module => 
+{
+    const url = module.attributes.src.value.split(' ');
+
+    load_file(url[0], function(data) 
+    {
+        const parser = new DOMParser();
+        const module_document = parser.parseFromString(data, 'text/html');
+
+        if (url.length == 1)
+        {
+            // const scripts = module_document.querySelectorAll('script').forEach(script =>
+            //     document.querySelector('head').appendChild(script)
+            // );
+
+            // const head_children = module_document.querySelector('head').children;
+            // for (const child of head_children) { document.querySelector('head').appendChild(child); }
+
+            // const body_children = module_document.querySelector('body').children;
+            // console.log(body_children);
+            // for (const child of body_children) { module.after(child); }
+            
+            module.insertAdjacentHTML('afterend', data);
+        }
+        else
+        {
+            module.after(module_document.querySelector(url[1]));
+        }
+
         module.remove();
     });
 });
 
-function load_file(filename, callback) {
-    fetch(filename).then(response => response.text()).then(text => callback(text));
+function load_file(file_name, callback) 
+{
+    fetch(file_name).then(response => response.text()).then(text => callback(text));
 }

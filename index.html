@@ -6,11 +6,16 @@
 
     <link rel="icon" type="image/x-icon" href="images/site/favicon.ico">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/main.css">
 
-    <script defer src="js/featured-art-gallery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+    <script defer src="js/html-module-inserter.js"></script>
 
-    <!-- <script defer src="js/scroll.js"></script> -->
+    <!-- <script defer src="js/featured-art-gallery.js"></script> -->
+
+    <script defer src="js/scroll.js"></script>
     <!-- <script defer src="js/main-page.js"></script> -->
     <script defer src="js/modal-handler.js"></script>
 
@@ -51,24 +56,16 @@
                 <a onclick="CloseOpenModals()">close</a>
             </div>
             <div class="content">
-                <a href="https://www.linkedin.com/in/raechel-mortensen-0b542b340">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/raechel-mortensen-0b542b340"> 
+                    <i class="fa-brands fa-linkedin"></i> 
+                    <!-- <p>LinkedIn</p> -->
+                </a>
             </div>
         </div>
         </div>
     </div>
 
-    <!-- <div id="navbar" class="navbar">
-        <div class="content">
-        <div class="section-box">
-            <h2 class="section"></h2>
-        </div>
-        <div class="links">
-            <a>Games</a>
-            <a>3D Art</a>
-            <a>Music</a>
-        </div>
-        </div>
-    </div> -->
+    <module src="html_modules/navbar.html"></module>
 
     </div>
 
@@ -81,14 +78,14 @@
 
         <div class="project">
             <div class="preview">
-                <iframe frameborder="0" src="https://itch.io/embed/3142573?bg_color=c5ebf7&amp;fg_color=0e64c0&amp;link_color=ef942b&amp;border_color=336dbe" width="552" height="167"><a href="https://brainfriendsstudio.itch.io/fetching-stars">Fetching Stars by BrainFriends.Studio</a></iframe>
+                <!-- width="552" height="167" -->
+                <iframe frameborder="0" src="https://itch.io/embed/3142573?bg_color=c5ebf7&amp;fg_color=0e64c0&amp;link_color=ef942b&amp;border_color=336dbe" width="100%"><a href="https://brainfriendsstudio.itch.io/fetching-stars">Fetching Stars by BrainFriends.Studio</a></iframe>
             </div>
-            <div class="blurb">
-                <p>I was the <b>Lead Programmer</b> on BrainFriends' Fetching Stars.</p>
-                <br>
-                <p>In this role, my work included programming the player movement and oxygen system, holdable and collectable items, interactable level elements, and subtitles.
-                    Additionally, I was involved with project management by setting up and maintaining the version control of the project through GitHub.
-                </p>
+            <div class="blurb-box">
+                <div class="blurb-fill">
+                <module src="pages/fetching-stars.html .blurb"></module>
+                </div>
+                <a href="pages/fetching-stars.html"><p>Read More</p></a>
             </div>
         </div>
 
@@ -128,9 +125,9 @@
 
     <button onclick="document.location='gallery.html';"><p>view full art gallery</p></button>
 
-    </div>
+    </div> -->
 
-    <div style="height: 100vh;"></div> -->
+    <div style="height: 100vh;"></div>
     
 </body>
 </html>

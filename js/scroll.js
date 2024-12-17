@@ -1,7 +1,17 @@
 
 
-const navbar = document.querySelector('#navbar');
-const navbar_offset = navbar.offsetTop;
+// const navbar = document.querySelector('#navbar');
+// const navbar_offset = navbar.offsetTop;
+
+let navbar;
+let navbar_offset;
+
+window.onload = function()
+{
+    navbar = document.querySelector('#navbar');
+    navbar_offset = navbar.offsetTop;
+    console.log('navbar script on load');
+}
 
 window.onscroll = function()
 {
@@ -16,7 +26,7 @@ window.onscroll = function()
         navbar.classList.remove('stuck');
     }
 
-
+    // console.log(distance_to_top)
 }
 
-
+console.log('navbar script');

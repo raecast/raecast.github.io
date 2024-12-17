@@ -1,10 +1,10 @@
 
-const image_directory = "content/images/gallery/";
-const blurb_directory = "content/blurbs/";
+const image_directory = "../content/images/gallery/";
+const blurb_directory = "../content/blurbs/";
 
 async function PopulateProjectData()
 {
-    const data_directory = './data/art-projects.json';
+    const data_directory = '../data/art-projects.json';
     const request = new Request(data_directory);
 
     const response = await fetch(request);
