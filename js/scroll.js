@@ -1,17 +1,17 @@
 
 
-// const navbar = document.querySelector('#navbar');
-// const navbar_offset = navbar.offsetTop;
+const navbar = document.querySelector('#navbar');
+const navbar_offset = navbar.offsetTop;
 
-let navbar;
-let navbar_offset;
+// let navbar;
+// let navbar_offset;
 
-window.onload = function()
-{
-    navbar = document.querySelector('#navbar');
-    navbar_offset = navbar.offsetTop;
-    console.log('navbar script on load');
-}
+// function setup()
+// {
+//     console.log('navbar script setup');
+//     navbar = document.querySelector('#navbar');
+//     navbar_offset = navbar.offsetTop;
+// }
 
 window.onscroll = function()
 {
@@ -30,3 +30,9 @@ window.onscroll = function()
 }
 
 console.log('navbar script');
+// window.onload = setup()
+
+// this.onload = function()
+// {
+//     console.log('scroll loaded');
+// }

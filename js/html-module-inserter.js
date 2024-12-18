@@ -12,15 +12,25 @@ modules.forEach(module =>
 
         if (url.length == 1)
         {
-            // const scripts = module_document.querySelectorAll('script').forEach(script =>
-            //     document.querySelector('head').appendChild(script)
-            // );
+            module_document.querySelectorAll('script').forEach(script =>
+            {
+                if (!script.src) return;
 
-            // const head_children = module_document.querySelector('head').children;
-            // for (const child of head_children) { document.querySelector('head').appendChild(child); }
+                const script_element = document.createElement('script');
+                script_element.src = script.src;
+                //document.querySelector('head').appendChild(script);
+                // script_element.onload.call();
+
+                module.after(script_element);
+
+                console.log(script_element);
+            });
+
+            // // const head_children = module_document.querySelector('head').children;
+            // // for (const child of head_children) { document.querySelector('head').appendChild(child); }
 
             // const body_children = module_document.querySelector('body').children;
-            // console.log(body_children);
+            // // console.log(body_children);
             // for (const child of body_children) { module.after(child); }
             
             module.insertAdjacentHTML('afterend', data);

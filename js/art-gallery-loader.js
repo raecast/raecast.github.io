@@ -63,3 +63,4 @@ async function DisplayArt(index, project_info)
 }
 
 PopulateProjectData();
+console.log('art gallery loader');
