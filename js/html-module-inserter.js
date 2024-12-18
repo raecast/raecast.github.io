@@ -23,7 +23,7 @@ modules.forEach(module =>
 
                 module.after(script_element);
 
-                console.log(script_element);
+                // console.log(script_element);
             });
 
             // // const head_children = module_document.querySelector('head').children;
