@@ -1,38 +1,10 @@
-
-
 {
-    "image_directory":"content/images/gallery/",
-    "blurb_directory":"content/blurbs/",
+    "image_directory":"../content/images/gallery/",
+    "project_data_directory":"../data/projects/",
     "projects":[
-    { "featured":true,
-    "tags":["3d art"], 
-    "images":["skulleye_4krender05.png","skulleye_4krender06.png"],
-    "blurb":"skulleye_blurb.html"},
-    { "featured":false,
-    "tags":["3d art"],
-    "images":["luuluue_look_banner_render1.png"],
-    "blurb":"skulleye_blurb.html"},
-    { "featured":true,
-    "tags":["3d art"], 
-    "images":["apartments_draft1.png","skulleye_4krender06.png"],
-    "blurb":"skulleye_blurb.html"},
-    { "featured":true,
-    "tags":["3d art"], 
-    "images":["locust_render1.png","skulleye_4krender06.png"],
-    "blurb":"skulleye_blurb.html"},
-    { "featured":true,
-    "tags":["3d art"], 
-    "images":["jadehand_banner_4krender1.png","skulleye_4krender06.png"],
-    "blurb":"skulleye_blurb.html"},
-    { "featured":true,
-    "tags":["3d art"], 
-    "images":["luuluue_profile_4krender_green.png","skulleye_4krender06.png"],
-    "blurb":"skulleye_blurb.html"},
-    { "featured":true,
-    "tags":["3d art"], 
-    "images":["potplant_draftrender1.png","skulleye_4krender06.png"],
-    "blurb":"skulleye_blurb.html"}]
+        "locust.json",
+        "skulleye.json",
+        "paper_models.json",
+        "luuluue_promo.json"
+    ]
 }
-
-
-

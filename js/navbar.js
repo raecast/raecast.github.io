@@ -7,11 +7,13 @@ window.onscroll = function()
 {
     let distance_to_top = navbar_offset - document.documentElement.scrollTop;
 
-    if (distance_to_top <= 0 && !navbar.classList.contains('stuck'))
+    // console.log(distance_to_top);
+
+    if (distance_to_top < 0 && !navbar.classList.contains('stuck'))
     {
         navbar.classList.add('stuck');
     }
-    else if (distance_to_top > 0 && navbar.classList.contains('stuck'))
+    else if (distance_to_top >= 0 && navbar.classList.contains('stuck'))
     {
         navbar.classList.remove('stuck');
     }
