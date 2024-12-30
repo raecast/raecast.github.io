@@ -12,6 +12,12 @@ modules.forEach(module =>
 
         if (url.length == 1)
         {
+            const body_children = module_document.querySelector('body').children;
+            // console.log(body_children);
+            for (const child of body_children) { module.before(child); }
+
+            // console.log(module_document.querySelectorAll('script'));
+
             module_document.querySelectorAll('script').forEach(script =>
             {
                 if (!script.src) return;
@@ -29,11 +35,9 @@ modules.forEach(module =>
             // // const head_children = module_document.querySelector('head').children;
             // // for (const child of head_children) { document.querySelector('head').appendChild(child); }
 
-            // const body_children = module_document.querySelector('body').children;
-            // // console.log(body_children);
-            // for (const child of body_children) { module.after(child); }
             
-            module.insertAdjacentHTML('afterend', data);
+            
+            // module.insertAdjacentHTML('afterend', data);
         }
         else
         {
