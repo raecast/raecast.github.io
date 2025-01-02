@@ -1,6 +1,7 @@
 { 
     "featured":true,
     "tags":["3d art"], 
+    "directory":"../content/images/gallery/",
     "images":["locust_render1.png"],
     "link":"../projects/locust.html"
 }

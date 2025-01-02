@@ -22,7 +22,8 @@
     flex-wrap: wrap;
 }
 
-.image-item
+/* .image-item */
+.gallery-item img
 {
     max-height: 100vh;
     max-width: 100%;
@@ -70,13 +71,13 @@
     }
 }
 
-.gallery-box .modal .content-box
+.modal .content-box
 {
     display: flex;
     flex-direction: column;
 }
 
-.gallery-box .modal .content
+.modal .content
 {
     flex: 1;
     min-height: 0;

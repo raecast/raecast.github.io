@@ -1,11 +1,4 @@
 
-// let image_modal_module; 
-// fetch('../modules/image-modal.html').then(response => response.text()).then(text => image_modal_module = text);
-
-// function CreateImageModal(parent, id, images)
-// {
-//     const new_modal = parent.insertAdjacentHTML('afterend', image_modal_module);
-// }
 
 function OpenModal(id)
 {
@@ -26,12 +19,12 @@ function OpenImageModal(id, image_index)
     modal.querySelector('.current-image').src = image_src;
 }
 
-function OpenModalObj(modal)
-{
-    if (modal.classList.contains('active')) return;
-    modal.classList.add('active');
-    LockScroll();
-}
+// function OpenModalObj(modal)
+// {
+//     if (modal.classList.contains('active')) return;
+//     modal.classList.add('active');
+//     LockScroll();
+// }
 
 function CloseOpenModals()
 {
