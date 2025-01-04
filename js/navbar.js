@@ -18,3 +18,12 @@ window.onscroll = function()
         navbar.classList.remove('stuck');
     }
 }
+
+const path = window.location.pathname;
+const page = path.split("/").pop();
+
+const home_link = document.querySelector('#navbar-link-home');
+const art_link = document.querySelector('#navbar-link-art');
+
+if (page == 'index.html') { home_link.style = 'display:none;'; }
+if (page == 'gallery.html') { art_link.style = 'display:none;'; }

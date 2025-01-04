@@ -1,6 +1,6 @@
 
-const image_directory = "content/images/gallery/";
-const blurb_directory = "content/blurbs/";
+// const image_directory = "content/images/gallery/";
+// const blurb_directory = "content/blurbs/";
 
 async function PopulateProjectData()
 {

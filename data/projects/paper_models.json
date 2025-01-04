@@ -1,5 +1,5 @@
 { 
-    "featured":true,
+    "featured":false,
     "tags":["3d art"], 
     "directory":"../content/images/gallery/",
     "images":["potplant_draftrender1.png",

@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/theme.css">
 
     <link rel="stylesheet" href="css/gallery.css">
 
-
-    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
     <script defer src="js/html-module-inserter.js"></script>
     <script defer src="js/image-modal-maker.js"></script>
 
+    <script defer src="js/art-gallery-loader.js"></script>
     <!-- <script defer src="js/featured-art-gallery.js"></script> -->
 
     <!-- <script defer src="js/main-page.js"></script> -->
@@ -44,14 +44,17 @@
                 <h2>3D Artist</h2>
             </div>
             <div class="contact-box">
-                <button onclick="OpenModal('contact-modal')"><h2>contact</h2></button>
+                <!-- <button onclick="OpenModal('contact-modal')"><h2>contact</h2></button> -->
+                <a class="link-button" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/raechel-mortensen-0b542b340"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="link-button" target="_blank" rel="noopener noreferrer" href="https://www.github.com/raecast"><i class="fa-brands fa-github"></i></a>
+                <a class="link-button" target="_blank" rel="noopener noreferrer" href="https://bsky.app/profile/vulphoria.bsky.social"><i class="fa-brands fa-bluesky"></i></a>
             </div>
             </div>
         </div>
 
     </div>
 
-    <div id="contact-modal" class="modal">
+    <!-- <div id="contact-modal" class="modal">
         <div class="modal-box fill blur-background">
         <div class="content-box">
             <div style="padding: 20px;">
@@ -61,13 +64,12 @@
             <div class="content">
                 <a href="https://www.linkedin.com/in/raechel-mortensen-0b542b340"> 
                     <i class="fa-brands fa-linkedin"></i> 
-                    <!-- <p>LinkedIn</p> -->
                 </a>
             </div>
             </div>
         </div>
         </div>
-    </div>
+    </div> -->
 
     <module src="modules/navbar.html"></module>
 
@@ -81,7 +83,7 @@
     <div class="projects-box">
 
         <div class="project">
-            <div class="preview">
+            <div class="itch preview">
                 <!-- width="552" height="167" -->
                 <iframe frameborder="0" src="https://itch.io/embed/3142573?bg_color=c5ebf7&amp;fg_color=0e64c0&amp;link_color=ef942b&amp;border_color=336dbe" width="100%"><a href="https://brainfriendsstudio.itch.io/fetching-stars">Fetching Stars by BrainFriends.Studio</a></iframe>
             </div>
@@ -89,7 +91,7 @@
                 <div class="blurb-fill">
                 <module src="projects/fetching-stars.html .blurb"></module>
                 </div>
-                <a href="projects/fetching-stars.html"><p>Read More</p></a>
+                <a class="link-button read-more-button" href="projects/fetching-stars.html"><p>Read More</p></a>
             </div>
         </div>
 
@@ -112,11 +114,11 @@
 
     <module src="modules/image-modal.html"></module> -->
 
-    <!-- <div class="feature-box">
+    <div class="feature-box">
 
     <h1>3D Art</h1>
 
-    <div id="featured-art-box" class="projects-box">
+    <div id="featured-art-box" class="projects-box gallery-box" tags="featured">
 
         <template id="featured-art-template">
             <div class="project">
@@ -124,29 +126,16 @@
                     <img class="preview" src="">
                 </a>
 
-                <div class="modal">
-                    <div class="modal-box fill blur-background">
-                        <div class="content-box">
-                            <div class="top-bar">
-                                <a onclick="CloseOpenModals()">close</a>
-                            </div>
-                            <div class="content">
-                                aaaa
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
                 <div class="blurb"></div>
             </div>
         </template>
     </div>
 
-    <button onclick="document.location='gallery.html';"><p>view full art gallery</p></button>
+    <a class="link-button read-more-button" href="gallery.html"><p>View Full Art Gallery</p></a>
 
-    </div> -->
+    </div>
 
-    <div style="height: 100vh;"></div>
+    <!-- <div style="height: 100vh;"></div> -->
     
 </body>
 </html>
