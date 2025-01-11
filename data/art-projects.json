@@ -4,7 +4,6 @@
     "projects":[
         "locust.json",
         "skulleye.json",
-        "paper_models.json",
-        "luuluue_promo.json"
+        "paper_models.json"
     ]
 }
