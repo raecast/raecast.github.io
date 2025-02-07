@@ -5,6 +5,7 @@
         "locust.json",
         "skulleye.json",
         "paper_models.json",
-        "mimic.json"
+        "mimic.json",
+	"star_tempest_generic_fem.json"
     ]
 }

@@ -1,0 +1,6 @@
+{ 
+    "featured":false,
+    "tags":["3d art", "character"], 
+    "directory":"../content/images/gallery/",
+    "images":["cf_mouth.png", "cf_screenshot.png"]
+}
