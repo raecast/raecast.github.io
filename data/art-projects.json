@@ -3,9 +3,10 @@
     "project_data_directory":"../data/projects/",
     "projects":[
         "locust.json",
-        "skulleye.json",
-        "paper_models.json",
         "mimic.json",
-	"star_tempest_generic_fem.json"
+	"skulleye.json",
+	"star_tempest_generic_fem.json",
+	"star_tempest_generic_blacksmith.json",
+	"paper_models.json"
     ]
 }

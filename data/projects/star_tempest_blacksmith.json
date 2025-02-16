@@ -1,0 +1,6 @@
+{ 
+    "featured":false,
+    "tags":["3d art", "character"], 
+    "directory":"../content/images/gallery/",
+    "images":["blacksmith face.png", "blacksmith head.png", "blacksmith t pose.png"]
+}
