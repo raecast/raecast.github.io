@@ -6,7 +6,7 @@
         "mimic.json",
 	"skulleye.json",
 	"star_tempest_generic_fem.json",
-	"star_tempest_generic_blacksmith.json",
+	"star_tempest_blacksmith.json",
 	"paper_models.json"
     ]
 }
