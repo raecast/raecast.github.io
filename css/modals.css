@@ -54,10 +54,10 @@
 
 
 
-.modal a
+/* .modal a
 {
     padding: 10px;
-}
+} */
 
 .modal .content
 {
@@ -95,6 +95,13 @@
 {
     display: flex;
     justify-content: flex-end;
+
+    padding: 10px;
+}
+
+.blurb-box
+{
+    padding: 10px;
 }
 
 .modal

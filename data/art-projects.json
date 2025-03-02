@@ -3,6 +3,7 @@
     "project_data_directory":"../data/projects/",
     "projects":[
         "locust.json",
+	"val_gambler.json",
         "mimic.json",
 	"skulleye.json",
 	"star_tempest_generic_fem.json",

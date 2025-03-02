@@ -27,7 +27,14 @@ function PopulateImageModal(modal, collection_info)
         {
             const parser = new DOMParser();
             const module_document = parser.parseFromString(data, 'text/html');
-            blurb_fill.appendChild(module_document.querySelector('.blurb'));
+
+            const blurb = module_document.querySelector('.blurb')
+            blurb_fill.appendChild(blurb);
+
+            if (blurb.attributes.rel.value == 'nolink')
+            {
+                project_link.style = 'display: none;';
+            }
         });
     }
     else
