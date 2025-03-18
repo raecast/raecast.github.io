@@ -4,6 +4,7 @@
     "projects":[
         "locust.json",
 	"val_gambler.json",
+	"stylised_spray_paint_can.json",
         "mimic.json",
 	"skulleye.json",
 	"star_tempest_generic_fem.json",
