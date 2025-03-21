@@ -24,6 +24,8 @@ const page = path.split("/").pop();
 
 const home_link = document.querySelector('#navbar-link-home');
 const art_link = document.querySelector('#navbar-link-art');
+const games_link = document.querySelector('#navbar-link-games');
 
 if (page == 'index.html') { home_link.style = 'display:none;'; }
 if (page == 'gallery.html') { art_link.style = 'display:none;'; }
+if (page == 'games.html') { games_link.style = 'display:none;'; }

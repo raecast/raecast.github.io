@@ -53,6 +53,12 @@ button
 .link-button
 {
     cursor: pointer;
+
+    transition: ease-in-out 200ms;
+}
+.link-button:hover
+{
+    transform: scale(1.01);
 }
 
 
@@ -145,7 +151,10 @@ img
 {
     display: flex;
     flex-direction: column;
+
+    /* gap: 20px; */
 }
+
 
 .project
 {
@@ -154,6 +163,10 @@ img
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+}
+.project:nth-child(even)
+{
+    flex-direction: row-reverse;
 }
 
 .blurb-box
@@ -164,8 +177,11 @@ img
 
     min-width: 200px;
 
-    max-height: 150px;
+    /* max-height: 150px; */
+    min-height: 100px;
     text-align: justify;
+
+    contain: size;
 }
 
 .blurb-fill
@@ -209,6 +225,7 @@ img
 .navbar
 {
     width: 100%;
+    z-index: 10;
 }
 
 .stuck
@@ -250,15 +267,9 @@ img
     padding: 50px;
 }
 
-
-.hidden
-{
-    display: none;
-}
-
-
 .itch.preview
 {
+    height: 150px;
     @media (max-width: 600px)
     {
         max-width: 190px;
