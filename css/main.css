@@ -146,14 +146,20 @@ img
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
+    /* width: 100%; */
 }
 
 
 .feature-box
 {
-    padding: 20px;
+    flex: auto;
+    /* width: inherit; */
     max-width: 1000px;
-    /* margin: auto; */
+
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .projects-box
