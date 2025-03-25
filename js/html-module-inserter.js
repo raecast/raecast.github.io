@@ -38,6 +38,17 @@ modules.forEach(module =>
             
             
             // module.insertAdjacentHTML('afterend', data);
+
+            module_document.querySelectorAll('link').forEach(link =>
+            {
+                if (!link.href) return;
+    
+                const link_element = document.createElement('link');
+                link_element.rel = link.rel;
+                link_element.href = link.href;
+                
+                module.after(link_element);
+            });
         }
         else
         {

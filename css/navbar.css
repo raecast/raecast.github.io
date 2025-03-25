@@ -1,0 +1,32 @@
+
+.navbar
+{
+    width: 100%;
+    z-index: 10;
+}
+
+.stuck
+{
+    position: fixed;
+    top: 0;
+}
+
+.navbar .content
+{
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.links
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.current-page
+{
+    text-decoration: underline;
+}

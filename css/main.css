@@ -140,11 +140,20 @@ img
 }
 
 
+.main-page
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
 .feature-box
 {
     padding: 20px;
     max-width: 1000px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .projects-box
@@ -222,32 +231,7 @@ img
 }
 
 
-.navbar
-{
-    width: 100%;
-    z-index: 10;
-}
 
-.stuck
-{
-    position: fixed;
-    top: 0;
-}
-
-.navbar .content
-{
-    padding: 20px;
-
-    display: flex;
-    justify-content: space-between;
-}
-
-.links
-{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
 
 

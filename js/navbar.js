@@ -26,6 +26,26 @@ const home_link = document.querySelector('#navbar-link-home');
 const art_link = document.querySelector('#navbar-link-art');
 const games_link = document.querySelector('#navbar-link-games');
 
-if (page == 'index.html') { home_link.style = 'display:none;'; }
-if (page == 'gallery.html') { art_link.style = 'display:none;'; }
-if (page == 'games.html') { games_link.style = 'display:none;'; }
+function set_current_page()
+{
+    home_link.classList.remove('current-page');
+    art_link.classList.remove('current-page');
+    games_link.classList.remove('current-page');
+
+    switch (page) 
+    {
+        case 'index.html':
+            home_link.classList.add('current-page');
+            break;
+        case 'gallery.html':
+            art_link.classList.add('current-page');
+            break;
+        case 'games.html':
+            games_link.classList.add('current-page');
+            break;
+        default:
+            break;
+    }
+}
+set_current_page();
+
