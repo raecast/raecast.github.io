@@ -1,4 +1,4 @@
-const image_directory = "../content/images/gallery/";
+const image_directory = "/content/images/gallery/";
 
 function PopulateImageModal(modal, collection_info)
 {
@@ -98,7 +98,7 @@ function CreateModals(modal_data)
 
 async function FetchImageModalData()
 {
-    const response = await fetch('../modules/image-modal.html');
+    const response = await fetch('/modules/image-modal.html');
     return await response.text();
 }
 FetchImageModalData().then(modal_data => CreateModals(modal_data));

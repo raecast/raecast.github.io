@@ -3,5 +3,5 @@
     "tags":["3d art", "character"], 
     "directory":"../content/images/gallery/",
     "images":["val_gambler_head_halfres.png"],
-    "link":"projects/val-gambler.html"
+    "link":"../projects/val-gambler.html"
 }

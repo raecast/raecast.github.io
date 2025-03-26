@@ -65,7 +65,7 @@ function PopulateGalleries(with_data)
 
 async function FetchArtProjectData()
 {
-    const response = await fetch('../data/art-projects.json');
+    const response = await fetch('/data/art-projects.json');
     return await response.json();
 }
 

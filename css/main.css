@@ -184,7 +184,7 @@ img
     flex-direction: row-reverse;
 }
 
-.blurb-box
+.project .blurb-box
 {
     flex: 1;
     display: flex;
@@ -194,9 +194,11 @@ img
 
     /* max-height: 150px; */
     min-height: 100px;
+    /* min-height: 1em; */
     text-align: justify;
 
     contain: size;
+    /* contain: content; */
 }
 
 .blurb-fill

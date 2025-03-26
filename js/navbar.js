@@ -19,8 +19,8 @@ window.onscroll = function()
     }
 }
 
-const path = window.location.pathname;
-const page = path.split("/").pop();
+const path = window.location.pathname.replaceAll('/','');
+// const page = path.split("/")[0];
 
 const home_link = document.querySelector('#navbar-link-home');
 const art_link = document.querySelector('#navbar-link-art');
@@ -32,15 +32,15 @@ function set_current_page()
     art_link.classList.remove('current-page');
     games_link.classList.remove('current-page');
 
-    switch (page) 
+    switch (path) 
     {
-        case 'index.html':
+        case '':
             home_link.classList.add('current-page');
             break;
-        case 'gallery.html':
+        case 'gallery':
             art_link.classList.add('current-page');
             break;
-        case 'games.html':
+        case 'games':
             games_link.classList.add('current-page');
             break;
         default:
