@@ -4,12 +4,14 @@
     </head> -->
 <body>
     <div class="modal">
+        
         <div class="content-box fill blur-background">
 
-            <div class="top-bar">
-                <a class="link-button" onclick="CloseOpenModals()">close</a>
+
+            <div class="top-bar" onclick="CloseOpenModals(event)">
+                <a class="link-button" onclick="CloseOpenModals(event)">close</a>
             </div>
-            <div class="content">
+            <div class="content" onclick="CloseOpenModals(event)">
                 <div class="current-image-box">
                     <img class="current-image" src="">
                 </div>

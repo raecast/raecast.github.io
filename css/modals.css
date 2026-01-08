@@ -36,6 +36,8 @@
 
 .current-image-box
 {
+    margin: auto;
+
     flex: 1;
     min-height: 0;
 

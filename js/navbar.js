@@ -30,7 +30,7 @@ function set_current_page()
 {
     home_link.classList.remove('current-page');
     art_link.classList.remove('current-page');
-    games_link.classList.remove('current-page');
+    // games_link.classList.remove('current-page');
 
     switch (path) 
     {

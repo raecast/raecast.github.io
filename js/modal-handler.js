@@ -26,8 +26,13 @@ function OpenImageModal(id, image_index)
 //     LockScroll();
 // }
 
-function CloseOpenModals()
+function CloseOpenModals(event)
 {
+    console.log(event.target);
+    console.log(event.currentTarget);
+
+    if (event.target != event.currentTarget) return;
+
     const modals = document.querySelectorAll('.modal');
     // console.log(modals);
     modals.forEach(modal => { 
